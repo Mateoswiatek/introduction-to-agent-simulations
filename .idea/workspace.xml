@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="170a7723-8946-4646-a630-c736d290d828" name="Changes" comment="SpiceSugar add landspace and tests">
+    <list default="true" id="170a7723-8946-4646-a630-c736d290d828" name="Changes" comment="Agentize the Landspace">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpiceSugar/SpiceSugar.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SpiceSugar/SpiceSugar.ipynb" afterDir="false" />
     </list>
@@ -100,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1718475683116</updated>
       <workItem from="1718475684445" duration="1570000" />
-      <workItem from="1718532501081" duration="20398000" />
+      <workItem from="1718532501081" duration="22394000" />
     </task>
     <task id="LOCAL-00001" summary="init agents">
       <option name="closed" value="true" />
@@ -134,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718550493700</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Agentize the Landspace">
+      <option name="closed" value="true" />
+      <created>1718553112749</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718553112749</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +153,8 @@
     <MESSAGE value="group" />
     <MESSAGE value="SpiceSugar init" />
     <MESSAGE value="SpiceSugar add landspace and tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="SpiceSugar add landspace and tests" />
+    <MESSAGE value="Agentize the Landspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agentize the Landspace" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/WarSimulation$MyModel.coverage" NAME="MyModel Coverage Results" MODIFIED="1718549917058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpiceSugar/SimEnvironment" />

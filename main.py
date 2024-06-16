@@ -4,14 +4,14 @@ from mesa.visualization.modules import CanvasGrid, TextElement
 from mesa.visualization.ModularVisualization import ModularServer
 
 def agent_portrayal(agent):
-    direction_map = {
-        0: (1, 0),  # W prawo
-        90: (0, 1),  # W górę
-        180: (-1, 0),  # W lewo
-        270: (0, -1)  # W dół
-    }
-
-    heading = direction_map[agent.heading]
+    # direction_map = {
+    #     0: (1, 0),  # W prawo
+    #     90: (0, 1),  # W górę
+    #     180: (-1, 0),  # W lewo
+    #     270: (0, -1)  # W dół
+    # }
+    #
+    # heading = direction_map[agent.heading]
 
     portrayal = {
         "Shape": "circle", # arrowHead circle
@@ -28,9 +28,12 @@ def agent_portrayal(agent):
         # "Heading_y": heading[1]  # Kierunek y
     }
 
-
-
     return portrayal
+
+
+# grid = SimpleCanvas(agent_portrayal,
+#                     canvas_width=500,
+#                     canvas_height=500)
 
 grid = CanvasGrid(agent_portrayal, 10, 10, 500, 500)
 
@@ -54,5 +57,5 @@ server = ModularServer(
     model_params
 )
 
-server.port = 8521 # Następny dostępny port
+server.port = 8521  # Następny dostępny port
 server.launch()

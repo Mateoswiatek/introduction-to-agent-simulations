@@ -1,5 +1,5 @@
 from mesa import Agent, Model
-from mesa.space import MultiGrid
+from mesa.space import ContinuousSpace, MultiGrid, SingleGrid
 from mesa.time import RandomActivation
 
 
@@ -9,6 +9,7 @@ class RandomWalker(Agent):
     def __init__(self, unique_id, model, group):
         super().__init__(unique_id, model)
         self.group = group
+        # self.pos = (x, y)
         self.x = self.random.randint(0, self.model.grid.width - 1)
         self.y = self.random.randint(0, self.model.grid.height - 1)
         self.heading = self.random.choice([0, 90, 180, 270])  # Początkowy kierunek (0, 90, 180, 270 stopni)
@@ -17,7 +18,7 @@ class RandomWalker(Agent):
         self.action_log = ""  # Dodatkowe pole do przechowywania informacji o działaniach agenta
 
     def step(self):
-        """Move the agent to a random neighboring cell."""
+        print(f"Agent: {self.unique_id} Heading to: {self.heading}, Pozycja to {self.pos}")
 
         # direction_map = { Jak w matmie to jest
         #     0: (1, 0),    # W prawo
@@ -45,6 +46,8 @@ class PopulationModel(Model):
     def __init__(self, N, width, height):
         super().__init__()
         self.num_agents = N
+        # self.grid = ContinuousSpace(x_max=x_max, y_max=y_max, torus=False)
+        # self.grid = SingleGrid(width, height, False)
         self.grid = MultiGrid(width, height, False)
         self.schedule = RandomActivation(self)
 
